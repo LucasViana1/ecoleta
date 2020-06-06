@@ -105,7 +105,7 @@ const CreatePoint = () => {
 
   function handleSelectItem(id: number) {
     const alreadySelected = selectedItems.findIndex((item) => item === id);
-    if (alreadySelected > 0) {
+    if (alreadySelected >= 0) {
       const filteredItems = selectedItems.filter((item) => item !== id);
       setSelectedItems(filteredItems);
     } else {
