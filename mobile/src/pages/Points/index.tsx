@@ -141,6 +141,7 @@ const Points = () => {
                   onPress={() => handleNavigateToDetail(point.id)}
                 >
                   <View style={styles.mapMarkerContainer}>
+                    {console.log(point.image_url)}
                     <Image
                       style={styles.mapMarkerImage}
                       source={{
